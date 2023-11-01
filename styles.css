@@ -20,10 +20,26 @@ h1{
     font-size: 18px;
 
 }
-header li a{
+
+header .container {
+    display: flex;
+}
+
+
+header li {
+    list-style-type: none;
+    text-align: right;
+}
+header .container ul {
+    display: flex;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+header li a {
     text-align: right;
     font-size: 18px;
-    color: #6b7280;
+    color: #6b7280; 
 }
 header li a:hover{
     background-color: #5A67D8;
