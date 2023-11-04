@@ -17,7 +17,6 @@ h1{
     font-size: 18px;
 
 }
-
 header .container {
     display: flex;
     text-align: justify;
@@ -43,7 +42,6 @@ img {
     width: 200px;
     height: 200px;
 }
-
 .container{
     display:flex;
     text-align: justify;
@@ -79,37 +77,63 @@ img {
     gap: 20px;
     font-size: 18px;
 }
-
 .learn-about {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    margin: 20px 0;
     padding: 20px;
-}
-
-.learn-card {
+  }
+  
+  .learn-about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .learn-about h2 {
+    font-size: 24px;
+    color: #48BB78;
+    margin: 0;
+    align-self: flex-start;
+  }
+  
+  .learn-about .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .learn-about .card {
+    flex: 1;
+    max-width: 300px;
     background-color: white;
     padding: 10px;
     border: 1px solid #E2E8F0;
     border-radius: 5px;
     box-shadow: 3px 3px 5px #888888;
-    text-align: center; 
+    text-align: center;
+  }
+  
+ .learn-about .card .card-image {
+    padding: 1px;  
+  }
 
-    margin: 10px;
-    max-width: 300px; 
-}
-
-.learn-card img {
-    max-width: 100%; 
-}
-
-.learn-card h2 {
+  .learn-about .card .card-body {
+    max-height: 300px; 
+    overflow: hidden;
+  }
+  .learn-about .card img {
+    max-width: 100%;
+  }
+  
+  .learn-about .card h3 {
     font-size: 21px;
     color: #48BB78;
-}
-
-
+    margin: 0;
+  }
+  
+  .learn-about .card p {
+    text-align: justify;
+  }
+  
 
 .covid-section {
     background-color: #4A5568;
