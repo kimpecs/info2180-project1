@@ -4,7 +4,6 @@ body {
     margin: 0;
     font-size: 16px;
 }
-
 .container {
     margin: 0 auto;
     max-width: 960px;
@@ -12,9 +11,7 @@ body {
 }
 header {
     background-color: white;
-
 }
-
 h1{
     text-align: left;
     font-size: 18px;
@@ -23,24 +20,154 @@ h1{
 
 header .container {
     display: flex;
+    text-align: justify;
+    justify-content: space-around;
 }
-
-
 header li {
     list-style-type: none;
     text-align: right;
 }
 header .container ul {
     display: flex;
-    text-align: justify;
-    text-justify: inter-word;
+    gap: 20px;
 }
-
 header li a {
     text-align: right;
     font-size: 18px;
     color: #6b7280; 
 }
 header li a:hover{
-    background-color: #5A67D8;
+    color: #5A67D8;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.container{
+    display:flex;
+    text-align: justify;
+    text-justify: space-around;
+   
+}
+.overview-hero .container{
+    display: flex;
+    background-color: #E2E8F0;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero-section .container img {
+    text-align: left;
+}
+.hero-section img {
+    float: left;
+    max-width: 50%; 
+    padding: 25px 70px 75px 60px;
+    
+}
+.section h2 {
+    float: right;
+    text-align: center;
+    gap: 20px;
+    font-size: 24x;
+
+}
+.section h2 p{
+    float: right;
+    text-align: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.learn-about {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.learn-card {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #888888;
+    text-align: center; 
+
+    margin: 10px;
+    max-width: 300px; 
+}
+
+.learn-card img {
+    max-width: 100%; 
+}
+
+.learn-card h2 {
+    font-size: 21px;
+    color: #48BB78;
+}
+
+
+
+.covid-section {
+    background-color: #4A5568;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.covid-section a {
+    background-color: #48BB78;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+/* Recent Stories section */
+.recent-stories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+}
+
+.recent-story {
+    flex: 1;
+}
+
+.recent-story img {
+    border-radius: 50%; 
+    max-width: 100px; 
+}
+
+.recent-story h2 {
+    font-size: 18px;
+    color: #5A67D8;
+}
+
+
+.newsletter {
+    background-color: #48BB78;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.newsletter input,
+.newsletter button {
+    padding: 10px;
+    margin: 5px;
+}
+
+
+footer {
+    background-color: #4A5568;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
