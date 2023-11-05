@@ -74,7 +74,6 @@ img {
   padding: 25px 70px 75px 60px;
 
 }
-
 .section h2 {
   float: right;
   text-align: center;
@@ -82,18 +81,11 @@ img {
   font-size: 24x;
 
 }
-
-.section h2 p {
-  float: right;
-  text-align: center;
-  gap: 20px;
-  font-size: 18px;
-}
  .learn-about h2 {
   font-size: 24px;
   color: #48BB78;
   margin: 10px;
-  align-self: flex-start;
+  padding-left: 420px;
 } 
 .cards {
   display: grid;
@@ -132,8 +124,10 @@ img {
   margin-top: 30px;
   background-color: #4A5568;
   color: white;
-  padding:  40px;
+  padding:  100px;
   display: flex;
+  text-align: justify;
+  justify-content: space-around;
 }
 .testing .cta a {
   background-color: #48BB78;
@@ -141,17 +135,21 @@ img {
   border-radius: 5px;
   padding: 5px 10px;
   text-decoration: none;
+  justify-content: space-around;
 }
 .testing h2 {
   font-weight: bold;
   margin-bottom: 10px;
+
+}
+.testing .container h2 p{
+  justify-content: space-around;
 }
 .testing.cta  { 
   text-align: center;
 
 
 }
-
 .stories .container {
   display: flex;
   flex-wrap: wrap;
@@ -160,59 +158,50 @@ img {
   padding-left: 30px;
   padding-bottom: 30px;
 }
-
 .stories article {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-
 .stories img {
   border-radius: 50%;
   width: 300px;
   height: 300px;
 }
-
 .stories h2 {
   font-size: 18px;
   color: #5A67D8;
 }
-
-
 .newsletter {
   background-color: #48BB78;
   color: white;
   padding: 20px;
   text-align: center;
 }
-
 .newsletter h3 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .newsletter p {
   margin: 10px 0;
 }
-
 .newsletter .form-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-
 .newsletter input,
 .newsletter button {
   padding: 10px;
   margin: 5px;
 }
-
-
-
 footer {
   background-color: #4A5568;
   color: white;
   padding: 20px;
-  text-align: center;
+  text-align: left;
+}
+footer p{
+  padding-left: 100px;
 }
