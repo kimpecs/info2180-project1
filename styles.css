@@ -137,30 +137,31 @@ img {
   .learn-about .card p {
     text-align: justify;
   } 
-.covid-section {
+.testing .container {
+  margin-top: 30px;
   background-color: #4A5568;
   color: white;
-  padding: 20px;
+  padding: 30px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
-.covid-section a {
+.testing .cta a {
   background-color: #48BB78;
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
-  text-decoration: none;
 }
 
-.covid-section h2 {
+.testing h2 {
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-.covid-section .cta {
+.testing.cta  {
   text-align: right;
+
 }
 
 .recent-stories {
