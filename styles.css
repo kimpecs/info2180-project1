@@ -141,10 +141,8 @@ img {
   margin-top: 30px;
   background-color: #4A5568;
   color: white;
-  padding: 30px 40px;
+  padding:  40px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .testing .cta a {
@@ -152,6 +150,7 @@ img {
   color: white;
   border-radius: 5px;
   padding: 5px 10px;
+  text-decoration: none;
 }
 
 .testing h2 {
@@ -160,7 +159,8 @@ img {
 }
 
 .testing.cta  {
-  text-align: right;
+  text-align: center;
+
 
 }
 
