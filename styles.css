@@ -41,6 +41,7 @@ header li a {
   text-align: right;
   font-size: 18px;
   color: #6b7280;
+  text-decoration: none;
 }
 
 header li a:hover {
@@ -51,14 +52,6 @@ img {
   width: 200px;
   height: 200px;
 }
-
-/* .container {
-  display: flex;
-  text-align: justify;
-  text-justify: space-around;
-
-} */
-
 .overview-hero {
   background-color: #E2E8F0;
 
@@ -96,23 +89,18 @@ img {
   gap: 20px;
   font-size: 18px;
 }
-
-
  .learn-about h2 {
   font-size: 24px;
   color: #48BB78;
   margin: 10px;
   align-self: flex-start;
 } 
-
 .cards {
   display: grid;
   grid-template-rows: repeat(1, 500px);
   grid-template-columns: repeat(3, 350px);
-
   justify-content: center;
 }
-
 .learn-about .card {
   flex: 0 3 auto;
   max-width: 300px;
@@ -136,6 +124,9 @@ img {
   }
   .learn-about .card p {
     text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
   } 
 .testing .container {
   margin-top: 30px;
@@ -144,7 +135,6 @@ img {
   padding:  40px;
   display: flex;
 }
-
 .testing .cta a {
   background-color: #48BB78;
   color: white;
@@ -152,35 +142,38 @@ img {
   padding: 5px 10px;
   text-decoration: none;
 }
-
 .testing h2 {
   font-weight: bold;
   margin-bottom: 10px;
 }
-
-.testing.cta  {
+.testing.cta  { 
   text-align: center;
 
 
 }
 
-.recent-stories {
+.stories .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.stories article {
+  display: flex;
   align-items: center;
+  gap: 40px;
 }
 
-.recent-story {
-  flex: 1;
-}
-
-.recent-story img {
+.stories img {
   border-radius: 50%;
-  max-width: 100px;
+  width: 300px;
+  height: 300px;
 }
 
-.recent-story h2 {
+.stories h2 {
   font-size: 18px;
   color: #5A67D8;
 }
