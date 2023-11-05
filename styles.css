@@ -1,118 +1,130 @@
 /* Add your CSS to this file */
 body {
-    font: size 18px;
-    margin: 0;
-    font-size: 16px;
+  font: size 18px;
+  margin: 0;
+  font-size: 16px;
 }
-.container {
-    margin: 0 auto;
-    max-width: 960px;
-    width: 100%;
+
+.overview-hero .container {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
 }
+
 header {
-    background-color: white;
+  background-color: white;
 }
-h1{
-    text-align: left;
-    font-size: 18px;
+
+h1 {
+  text-align: left;
+  font-size: 18px;
 
 }
+
 header .container {
-    display: flex;
-    text-align: justify;
-    justify-content: space-around;
+  display: flex;
+  text-align: justify;
+  justify-content: space-around;
 }
+
 header li {
-    list-style-type: none;
-    text-align: right;
+  list-style-type: none;
+  text-align: right;
 }
+
 header .container ul {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
+
 header li a {
-    text-align: right;
-    font-size: 18px;
-    color: #6b7280; 
+  text-align: right;
+  font-size: 18px;
+  color: #6b7280;
 }
-header li a:hover{
-    color: #5A67D8;
+
+header li a:hover {
+  color: #5A67D8;
 }
+
 img {
-    width: 200px;
-    height: 200px;
+  width: 200px;
+  height: 200px;
 }
-.container{
-    display:flex;
-    text-align: justify;
-    text-justify: space-around;
-   
-}
-.overview-hero .container{
-    display: flex;
-    background-color: #E2E8F0;
-    height: 300px;
-    justify-content: space-between;
-    align-items: center;
-}
-.hero-section .container img {
-    text-align: left;
-}
-.hero-section img {
-    float: left;
-    max-width: 50%; 
-    padding: 25px 70px 75px 60px;
-    
-}
-.section h2 {
-    float: right;
-    text-align: center;
-    gap: 20px;
-    font-size: 24x;
+
+/* .container {
+  display: flex;
+  text-align: justify;
+  text-justify: space-around;
+
+} */
+
+.overview-hero {
+  background-color: #E2E8F0;
 
 }
-.section h2 p{
-    float: right;
-    text-align: center;
-    gap: 20px;
-    font-size: 18px;
+
+.overview-hero .container {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  align-items: center;
 }
-.learn-about {
-    padding: 20px;
-  }
-  .learn-about .container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .learn-about h2 {
-    font-size: 24px;
-    color: #48BB78;
-    margin: 0;
-    align-self: flex-start;
-  } 
-  .learn-about .cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-  }
-  .learn-about .card {
-    flex: 1;
-    max-width: 300px;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #E2E8F0;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px #888888;
-    text-align: center;
-  }
+
+.hero-section .container img {
+  text-align: left;
+}
+
+.hero-section img {
+  float: left;
+  max-width: 50%;
+  padding: 25px 70px 75px 60px;
+
+}
+
+.section h2 {
+  float: right;
+  text-align: center;
+  gap: 20px;
+  font-size: 24x;
+
+}
+
+.section h2 p {
+  float: right;
+  text-align: center;
+  gap: 20px;
+  font-size: 18px;
+}
+
+
+ .learn-about h2 {
+  font-size: 24px;
+  color: #48BB78;
+  margin: 10px;
+  align-self: flex-start;
+} 
+
+.cards {
+  display: grid;
+  grid-template-rows: repeat(1, 500px);
+  grid-template-columns: repeat(3, 350px);
+
+  justify-content: center;
+}
+
+.learn-about .card {
+  flex: 0 3 auto;
+  max-width: 300px;
+  background-color: white;
+  padding: 5px;
+  border: 1px solid #E2E8F0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #888888;
+  text-align: center;
+}
  .learn-about .card .card-image {
     padding: 1px;  
-  }
-  .learn-about .card .card-body {
-    max-height: 300px; 
-    overflow: hidden;
   }
   .learn-about .card img {
     max-width: 100%;
@@ -124,91 +136,89 @@ img {
   }
   .learn-about .card p {
     text-align: justify;
-  }
-  .covid-section {
-    background-color: #4A5568;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .covid-section a {
-    background-color: #48BB78;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 10px;
-    text-decoration: none;
-  }
-  
-  .covid-section h2 {
-    font-weight: bold; 
-    margin-bottom: 10px; 
-  }
-  
-  .covid-section .cta {
-    text-align: right; 
-  }
-  
+  } 
+.covid-section {
+  background-color: #4A5568;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-/* Recent Stories section */
+.covid-section a {
+  background-color: #48BB78;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.covid-section h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.covid-section .cta {
+  text-align: right;
+}
+
 .recent-stories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
 }
 
 .recent-story {
-    flex: 1;
+  flex: 1;
 }
 
 .recent-story img {
-    border-radius: 50%; 
-    max-width: 100px; 
+  border-radius: 50%;
+  max-width: 100px;
 }
 
 .recent-story h2 {
-    font-size: 18px;
-    color: #5A67D8;
+  font-size: 18px;
+  color: #5A67D8;
 }
 
 
 .newsletter {
-    background-color: #48BB78;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .newsletter h3 {
-    font-weight: bold;
-    margin-bottom: 10px; 
-  }
-  
-  .newsletter p {
-    margin: 10px 0; 
-  }
-  
-  .newsletter .form-group {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .newsletter input,
-  .newsletter button {
-    padding: 10px;
-    margin: 5px;
-  }
-  
+  background-color: #48BB78;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.newsletter p {
+  margin: 10px 0;
+}
+
+.newsletter .form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.newsletter input,
+.newsletter button {
+  padding: 10px;
+  margin: 5px;
+}
+
 
 
 footer {
-    background-color: #4A5568;
-    color: white;
-    padding: 20px;
-    text-align: center;
+  background-color: #4A5568;
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
