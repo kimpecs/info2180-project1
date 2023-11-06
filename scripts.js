@@ -1,22 +1,25 @@
-<script>
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const form = document.querySelector("form");
-    const messageDiv = document.querySelector(".message");
+function isValidEmail(email) {
+	const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+	return emailRegex.test(email);
+}
 
-    form.addEventListener("submit", function(event) {
-      event.preventDefault()}; 
 
-     
-      const emailInput = document.getElementById("email");
-      const userEmail = emailInput.value.trim(); 
+document.addEventListener("DOMContentLoaded", (event) => {
 
-      if (userEmail === "") {
-        messageDiv.textContent = "Please enter a valid email address."};
-       else {
-        messageDiv.textContent = `Thank you! Your email address ${userEmail} has been added to our mailing list!`};
-        emailInput.value = "";
-    
-    );
-  );
-</script>
+	const form = document.forms[0];
+	const emailInput = document.getElementById("email");
+	
+	form.addEventListener("submit", (event) => {
+		event.preventDefault();
+
+		const email = emailInput.value;
+		const msg = document.getElementsByClassName("message")[0];
+		
+		if(isValidEmail(email)) {			
+			msg.innerHTML = `Thank you! Your email address ${email} has been added to our mailing list!`;
+		} else {
+			msg.innerHTML = "Please enter a valid email address."
+		}
+	})
+});

@@ -74,18 +74,18 @@ img {
   padding: 25px 70px 75px 60px;
 
 }
-.section h2 {
-  float: right;
-  text-align: center;
+.learn-about .container {
+  align-items: center;
   gap: 20px;
   font-size: 24x;
+  text-align: ;
 
 }
  .learn-about h2 {
   font-size: 24px;
   color: #48BB78;
   margin: 10px;
-  padding-left: 420px;
+  
 } 
 .cards {
   display: grid;
@@ -94,7 +94,6 @@ img {
   justify-content: center;
 }
 .learn-about .card {
-  flex: 0 3 auto;
   max-width: 300px;
   background-color: white;
   padding: 5px;
@@ -106,20 +105,20 @@ img {
  .learn-about .card .card-image {
     padding: 1px;  
   }
-  .learn-about .card img {
+.learn-about .card img {
     max-width: 100%;
   }
-  .learn-about .card h3 {
+.learn-about .card h3 {
     font-size: 21px;
     color: #48BB78;
-    margin: 0;
-  }
-  .learn-about .card p {
+    margin: 10;
+}
+.learn-about .card p {
     text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
     font-size: 18px;
-  } 
+} 
 .testing .container {
   margin-top: 30px;
   background-color: #4A5568;
@@ -140,7 +139,6 @@ img {
 .testing h2 {
   font-weight: bold;
   margin-bottom: 10px;
-
 }
 .testing .container h2 p{
   justify-content: space-around;
@@ -157,6 +155,7 @@ img {
   flex-direction: column;
   padding-left: 30px;
   padding-bottom: 30px;
+  justify-content: center;
 }
 .stories article {
   display: flex;
@@ -187,14 +186,17 @@ img {
 }
 .newsletter .form-group {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.newsletter input,
-.newsletter button {
+.newsletter input{
   padding: 10px;
-  margin: 5px;
+  margin-left: 10px;
+}
+.newsletter button {
+  background-color: #5A67D8;
+  padding: 10px;
+
 }
 footer {
   background-color: #4A5568;
